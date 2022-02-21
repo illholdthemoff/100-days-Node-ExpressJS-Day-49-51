@@ -1,0 +1,7 @@
+Remember,
+<%= %> - anything will be read as raw text
+<%- %> - will be read as HTML
+<%  %> - will be read as javascript
+
+
+with ejs we can serve static files through app.use(express.static("public")); a bit of middleware that grabs the content of a folder, in this case the "public" folder. Of course in such a case only folders that should be accessible to everyone should be in there.
